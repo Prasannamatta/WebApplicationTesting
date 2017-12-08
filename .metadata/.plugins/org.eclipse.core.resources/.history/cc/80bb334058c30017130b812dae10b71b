@@ -1,0 +1,31 @@
+package com.ScreenShot;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ScreenShot_Headerblock_FaceBook {
+
+	public static void main(String[] args) 
+	{
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("http://facebook.com");
+		
+		driver.findElement(By.name("email")).sendKeys("prasanna.matta@gmail.com");		
+		driver.findElement(By.name("pass")).sendKeys("mattaanji");		
+		driver.findElement(By.id("u_0_2")).click();
+		
+		WebElement HeaderBlock=driver.findElement(By.xpath(".//*[@id='js_6']/div"));
+		List<WebElement>Links=HeaderBlock.findElements(By.tagName("a"));
+		
+		System.out.println(Links.size());
+		
+		
+
+		
+
+	}
+
+}

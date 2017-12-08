@@ -1,0 +1,35 @@
+package com.DropdownFunction;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Sleeper;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewTours_ScreenShot
+{
+	FirefoxDriver driver;
+	
+  @BeforeTest
+  public void setup()
+  { 
+	  driver = new FirefoxDriver();
+	  driver.get("http//newtours.demoaut.com");
+	  driver.manage().window().maximize();
+	  
+	  
+  }
+  
+  @Test
+  public void ScreenShot_Newtour() throws IOException
+  {
+	  File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	  FileUtils.copyFile(srcFile, new File("C:\\Users\\Best Buy\\Desktop\\Prasanna Screen Shot\\newtours.png"));
+	 
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Scenarious]" parallel="tests">
+  <test name="Data driven Testing(failed)" parallel="tests">
+    <classes>
+      <class name="com.NewToursDemoAut.NewTours_Multiple_Registration">
+        <methods>
+          <include name="Setup"/>
+          <include name="EnterUserData"/>
+          <include name="Registration"/>
+        </methods>
+      </class> <!-- com.NewToursDemoAut.NewTours_Multiple_Registration -->
+      <class name="com.Keyword_Login.NewTours_Login_keyword">
+        <methods>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.Keyword_Login.NewTours_Login_keyword -->
+    </classes>
+  </test> <!-- Data driven Testing(failed) -->
+  <test name="Keyword Testing(failed)" parallel="tests">
+    <classes>
+      <class name="com.Keyword_Login.NewTours_Login_keyword">
+        <methods>
+          <include name="Login"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.Keyword_Login.NewTours_Login_keyword -->
+      <class name="com.NewToursDemoAut.NewTours_Multiple_Registration">
+        <methods>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.NewToursDemoAut.NewTours_Multiple_Registration -->
+    </classes>
+  </test> <!-- Keyword Testing(failed) -->
+</suite> <!-- Failed suite [TestNG Scenarious] -->

@@ -1,0 +1,36 @@
+package com.ScreenShot;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ScreenShot_Headerblock_FaceBook {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("http://facebook.com");
+		
+		driver.findElement(By.name("email")).sendKeys("prasanna.matta11@gmail.com");		
+		driver.findElement(By.name("pass")).sendKeys("mattaanji");	
+		
+		Thread.sleep(7000);
+		
+		driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();
+		
+		Thread.sleep(20000);
+		
+		WebElement HeaderBlock=driver.findElement(By.xpath(".//*[@id='js_6']/div"));
+	
+		
+		System.out.println(Links.size());
+		
+		
+
+		
+
+	}
+
+}

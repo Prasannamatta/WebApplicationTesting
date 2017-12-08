@@ -1,0 +1,14 @@
+package com.tsrtc;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Header_Click_Tsrtconline {
+
+	public static void main(String[] args) 
+	{
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("http://tsrtconline.in");
+
+	}
+
+}

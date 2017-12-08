@@ -1,0 +1,20 @@
+<suite name="TestNG Scenarious" parallel="tests">
+  <test  name="Keyword Testing">
+    <classes>
+      <class name="com.Keyword_Login.NewTours_Login_keyword"/>
+    </classes>
+  </test> 
+  
+    <test  name="Data driven Testing">
+    <classes>
+      <class name="com.NewToursDemoAut.NewTours_Multiple_Registration"/>
+    </classes>
+  </test> 
+  
+  <test  name="POM">
+    <classes>
+      <class name="com.POM.NewToursHomePagetesting"/>
+    </classes>
+  </test>
+  
+</suite> 

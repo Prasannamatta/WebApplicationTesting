@@ -1,0 +1,17 @@
+package com.tsrtc;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Header_Click_newtours
+
+	{
+		public static void main(String[] args)
+		{
+			FirefoxDriver driver = new FirefoxDriver();
+			driver.get("http://newtours.demoaut.com");
+			 
+			driver.
+			
+		}
+
+}

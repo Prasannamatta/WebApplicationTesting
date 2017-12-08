@@ -1,0 +1,22 @@
+<suite name="TestNG Scenarious">
+ 
+ 
+ <test name="FireFox Browser">
+<parameter name="Browser" value="firefox"/>
+
+  <classes>
+    <class name="com.grid.NewToursLogInTest"/>
+ </classes>
+ </test>
+
+
+
+<test name="Chrome Browser">
+<parameter name="Browser" value="chrome"/>
+
+  <classes>
+    <class name="com.grid.NewToursLogInTest"/>
+ </classes>
+ </test>
+
+</suite> 
