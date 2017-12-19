@@ -3464,3 +3464,53 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-12-08 07:26:16.729
 !MESSAGE No repository found at http://cucumber.github.io/cucumber-eclipse/update.site.
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2017-12-11 10:46:56.219
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '3': TestSuite: Scenario: Testing Loh=gin Functionality of NewTours Application : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:718)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:629)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:546)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:542)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:89)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:381)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:380)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:278)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2017-12-11 10:47:27.972
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '3': TestSuite: Scenario: Testing Loh=gin Functionality of NewTours Application : Completed - OK (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:718)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:655)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:531)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:527)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:93)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:381)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:380)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:278)
+!SESSION 2017-12-18 09:28:40.861 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-18 11:35:15.386
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Best Buy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-12-18 11:36:44.543
+!MESSAGE No repository found at http://cucumber.github.com/cucumber-eclipse/update.site.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-12-18 11:36:45.213
+!MESSAGE No repository found at http://cucumber.github.io/cucumber-eclipse/update.site.
